@@ -7,7 +7,9 @@ git pull origin master;
 function doIt() {
 	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
 		--exclude "README.md" --exclude "LICENSE-MIT.txt" -avh --no-perms . ~;
-	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim;
+	if [ ! -f ~/.vim/bundle/Vundle.vim ]; then
+	    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim;
+	fi
 	source ~/.bash_profile;
 }
 
