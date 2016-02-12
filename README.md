@@ -7,7 +7,7 @@ Installation
 ### Using Git and the bootstrap script
 
 ```bash
-cd && git clone https://github.com/btisystems/dotfiles.git && cd dotfiles && source bootstrap.sh
+mkdir -p ~/project && cd ~/project && git clone https://github.com/btisystems/dotfiles.git && cd dotfiles && source bootstrap.sh
 ```
 
 To update, `cd` into your local `dotfiles` repository and then:
