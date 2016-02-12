@@ -7,7 +7,7 @@ Installation
 ### Using Git and the bootstrap script
 
 ```bash
-cd && git clone https://github.com/mathiasbynens/dotfiles.git && cd dotfiles && source bootstrap.sh
+cd && git clone https://github.com/btisystems/dotfiles.git && cd dotfiles && source bootstrap.sh
 ```
 
 To update, `cd` into your local `dotfiles` repository and then:
@@ -44,7 +44,7 @@ My `~/.extra` looks something like this:
 GIT_AUTHOR_NAME="Damian ONeill"
 GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
 git config --global user.name "$GIT_AUTHOR_NAME"
-GIT_AUTHOR_EMAIL="doneill@btisystems.com"
+GIT_AUTHOR_EMAIL="me@bti.com"
 GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
 git config --global user.email "$GIT_AUTHOR_EMAIL"
 ```
